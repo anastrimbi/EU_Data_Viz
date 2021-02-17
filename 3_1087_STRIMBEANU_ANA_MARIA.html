@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Vizualizare date - Strimbeanu Ana-Maria - 1087</title>
+    <!--
+        <link rel="icon" href="/media/animated-UE.gif" type="image/gif">
+    -->
+    <link rel="icon" href="media/icon-european-union.png" type="image/png">
+    <script src="3_1087_STRIMBEANU_ANA_MARIA.js"></script>
+    <link rel="stylesheet" href="3_1087_STRIMBEANU_ANA_MARIA.css">
+</head>
+<body>
+    <h1>Vizualizare date</h1>
+    <p>
+        Pentru tarile Uniunii Europene (2004-2019) au fost preluate informatii despre indicatorii:
+    </p>
+    <ul>
+        <li>Speranta de viata</li>
+        <li>Populatie</li>
+        <li>PIB/capita</li>
+    </ul>
+
+
+    <!--
+        Grafic (svg) in functie de tara selectata
+    -->
+
+    <h2>Afisare grafic linie evolutie pentru un indicator si o tara: (svg)</h2>
+
+    <div>
+        <select class="selectoare" id="selectIndicatorGrafic">
+            <option value="SV">Speranta de viata</option>
+            <option value="POP">Populatie</option>
+            <option value="PIB">PIB/capita</option>
+        </select>
+        <select id="selectTaraGrafic" class="selectoare">
+        </select>
+        <br />
+        <svg width="900" height="300">
+            <rect width="900" height="300"></rect>
+            <text x="0" y="300" class="tooltip"></text>
+        </svg>
+
+    </div>
+
+    <!--
+        Bubble chart (raster) in functie de anul selectat
+    -->
+
+    <h2>Bubble chart pentru un an selectat: (raster)</h2>
+
+    <div>
+        <select id="selectAnBubbleChart" class="selectoare">
+        </select>
+        <br />
+        <canvas id="canvasBubbleChart" width="900" height="300">
+            
+        </canvas>
+    </div>
+
+    <!--
+        Tabel cu datele in functie de medie si anul selectat
+    -->
+
+    <h2>Tabel cu datele pentru toti cei 3 indicatori in functie de anul selectat:</h2>
+    <pre>Consider, conform modelului RGB: 
+    <span id="highlightVerde" class="highlight">valoarea maxima (interpretare pozitiva) -> verde</span>
+    <span id="highlightGalben" class="highlight">valoarea medie -> galben</span>
+    <span id="highlightRosu" class="highlight">valoarea minima (interpretare negativa) -> rosu</span>
+    
+    </pre>
+
+    <div>
+        <select id="selectAnTabelIndicatori" class="selectoare">
+        </select>
+        <table id="tabelIndicatori">
+            <caption>
+                Pozitionarea tarilor fata de media UE
+            </caption>
+            <thead>
+                <tr>
+                    <th>Tara</th>
+                    <th>Speranta de viata</th>
+                    <th>Populatia</th>
+                    <th>PIB/capita</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyIndicatori">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Media UE</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <footer>
+        <p><strong>Autor: Strimbeanu Ana-Maria, 1087</strong></p>
+        <p>Ianuarie 2021</p>
+        <p> Sursa: <a href="https://ec.europa.eu/eurostat/web/main/data/database">Eurostat</a></p>
+    </footer>
+</body>
+</html>

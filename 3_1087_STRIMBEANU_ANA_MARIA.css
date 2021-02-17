@@ -1,0 +1,139 @@
+* {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+body {
+    background-image: url('media/backgroundUE.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+table {
+    border: 1px solid #A63F03;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0px -5px 30px 10px #A63F03;
+}
+
+.selectoare {
+    padding: 10px 14px;
+    color: white;
+    background-color: #A63F03;
+    font-weight: bold;
+    border: 2px solid #F28D35;
+    border-radius: 10px;
+    margin: 20px;
+    outline: none;
+    box-shadow: 0px -5px 30px 10px #A63F03;
+}
+
+td, th {
+    padding: 10px 14px;
+    border-bottom: 2px solid #A63F03;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+td {
+    text-shadow: 0px 2px 9px #A63f03;
+}
+
+th, tbody td:first-child {
+    background-color: rgba(242, 179, 102, 0.8); 
+    /*opacity: 0.8;*/  /* afecta si transparenta scrisului*/
+}
+
+tfoot {
+    background-color: #A63F03;
+    font-weight: bold;
+}
+
+caption {
+    padding: 10px 14px;
+    border: 2px solid #F28D35;
+    border-bottom: none;
+    color: white;
+    background-color: #A63F03;
+    font-weight: bold;
+    box-shadow: 0px -5px 30px 10px #A63F03;
+}
+
+div{
+    text-align: center;
+}
+
+a {
+    transition: font-size 1s ease;
+}
+
+a:hover {
+    font-weight: bold;
+    font-size: larger;
+}
+
+footer {
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(242, 179, 102, 0.8);
+    color: #A63F03;
+    margin: 200px 0 0 0;
+    padding: 10px;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    box-shadow: 0px -5px 30px 10px #A63F03;
+}
+
+h1, h2, p, ul, pre {
+    color: white;
+    margin-left: 20px;
+}
+pre {
+    white-space: unset;
+}
+.highlight {
+    padding: 10px;
+    color: navy;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+}
+#highlightVerde{
+    background-color: green;
+}
+#highlightRosu {
+    background-color: red;
+}
+#highlightGalben {
+    background-color: yellow;
+}
+
+
+svg, canvas {
+    border: 10px solid #A63F03;
+}
+
+svg rect {
+    fill: rgba(242, 179, 102, 0.8);
+    stroke-width: 10;
+    stroke: brown;
+    /*fill:none;*/
+}
+
+polyline {
+    fill: transparent;
+    stroke: navy;
+    stroke-width: 5;
+}
+
+svg text {
+    font: bolder 30px sans-serif;
+    fill: white;
+}
+
+
